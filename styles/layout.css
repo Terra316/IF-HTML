@@ -1,0 +1,68 @@
+html,
+body {
+    margin: 0px;
+}
+
+.mDes {
+    grid-area: mDes;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+}
+
+.topBar {
+    grid-area: topBar;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.inBar {
+    grid-area: inBar;
+    color: black;
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.statBar {
+    grid-area: statBar;
+    color: black;
+    background-color: white;
+}
+
+.map {
+    grid-area: map;
+    background-color: white;
+}
+
+.blank {
+    grid-area: blank;
+    background-color: lightgray;
+}
+
+.blank0 {
+    grid-area: blank0;
+    background-color: lightgray;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    gap: 1px;
+    background-color: black;
+    grid-template-areas: 
+    'topBar topBar topBar topBar topBar'
+    'map    mDes   mDes   mDes   statBar'
+    'map    mDes   mDes   mDes   blank0'
+    'blank  mDes   mDes   mDes   blank0'
+    'blank  mDes   mDes   mDes   blank0'
+    'blank  mDes   mDes   mDes   blank0'
+    'blank  mDes   mDes   mDes   blank0'
+    'blank  mDes   mDes   mDes   blank0'
+    'blank  mDes   mDes   mDes   blank0'
+    'blank  inBar  inBar  inBar  blank0';
+}
